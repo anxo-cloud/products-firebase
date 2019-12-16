@@ -21,4 +21,14 @@ export class ProductService {
       price: product.price
     });
   }
+    //Actualizar producto.
+  updateProduct(product: Product){
+    this.productList.update(product.$key,{
+      name: product.name,
+      category: product.category,
+      location: product.location,
+      price: product.price
+    });
+  }
+
 }
