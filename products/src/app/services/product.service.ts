@@ -31,4 +31,8 @@ export class ProductService {
     });
   }
 
+  deleteProduct($key :string){
+    this.productList.remove($key);
+  }
+
 }
