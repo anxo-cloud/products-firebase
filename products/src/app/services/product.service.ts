@@ -6,6 +6,8 @@ import {Product} from '../models/product';
 })
 export class ProductService {
   productList: AngularFireList<any>;
+  //selectedProduct: para seleccionar un producto, almacenamos temporalmente un elemento, en el momento de seleccionarlo.
+  selectedProduct: Product = new Product();
   constructor(private firebase: AngularFireDatabase) { }
 
   //Obtener todos los productos.
